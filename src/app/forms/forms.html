@@ -1,0 +1,182 @@
+<section class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">Contact Us</h1>
+        <p class="hero-breadcrumb">
+            <span class="home" [routerLink]="['']">Home</span>
+            <span class="separator">/</span>
+            <span>Contact Us</span>
+        </p>
+    </div>
+</section>
+
+<section class="form-section">
+    <div class="form-container">
+
+        <div class="image-panel">
+            <img src="contact-us-image.jpg" alt="Gym trainer" class="panel-img" />
+            <div class="contact-info-bar">
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <img src="icon-phone-primary (1).svg" alt="">
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Phone Number</span>
+                        <span class="contact-value">+(123) 456 – 7890</span>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <img src="icon-mail-primary.svg" alt="">
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Email Address</span>
+                        <span class="contact-value">info&#64;domain.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-panel">
+
+            <div class="tab-switcher">
+                <button class="tab-btn" [class.active]="activeTab === 'signup'" (click)="activeTab = 'signup'">
+                    Sign Up
+                </button>
+                <button class="tab-btn" [class.active]="activeTab === 'signin'" (click)="activeTab = 'signin'">
+                    Sign In
+                </button>
+            </div>
+
+            <div *ngIf="activeTab === 'signup'" class="tab-content">
+                <h2 class="form-title">Contact Us Today</h2>
+                <p class="form-subtitle">
+                    Ready to begin your fitness journey? Contact GymPro today and let our
+                    expert trainers guide you with the right program and support.
+                </p>
+
+                <form (ngSubmit)="onSignUp()" #signupForm="ngForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">First Name <span class="required">*</span></label>
+                            <input type="text" class="form-input" placeholder="Enter First Name" name="firstName"
+                                [(ngModel)]="signupData.firstName" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name <span class="required">*</span></label>
+                            <input type="text" class="form-input" placeholder="Enter Last Name" name="lastName"
+                                [(ngModel)]="signupData.lastName" required />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Email Address <span class="required">*</span></label>
+                            <input type="email" class="form-input" placeholder="Enter Email Address" name="email"
+                                [(ngModel)]="signupData.email" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number <span class="required">*</span></label>
+                            <input type="tel" class="form-input" placeholder="Enter Phone Number" name="phone"
+                                [(ngModel)]="signupData.phone" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-textarea" placeholder="Any Additional Message..." name="message"
+                            [(ngModel)]="signupData.message" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Submit Message ↗
+                    </button>
+                </form>
+            </div>
+
+            <div *ngIf="activeTab === 'signin'" class="tab-content">
+                <h2 class="form-title">Welcome Back</h2>
+                <p class="form-subtitle">
+                    Sign in to your GymPro account to manage your fitness programs and stay on track.
+                </p>
+
+                <form (ngSubmit)="onSignIn()" #signinForm="ngForm" novalidate>
+                    <div class="form-group full-width">
+                        <label class="form-label">Email Address <span class="required">*</span></label>
+                        <input type="email" class="form-input" placeholder="Enter Email Address" name="signinEmail"
+                            [(ngModel)]="signinData.email" required />
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label class="form-label">Password <span class="required">*</span></label>
+                        <div class="password-wrapper">
+                            <input [type]="showPassword ? 'text' : 'password'" class="form-input"
+                                placeholder="Enter Password" name="signinPassword" [(ngModel)]="signinData.password"
+                                required />
+                            <button type="button" class="toggle-password" (click)="showPassword = !showPassword">
+                                <svg *ngIf="!showPassword" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                                <svg *ngIf="showPassword" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" />
+                                    <line x1="1" y1="1" x2="23" y2="23" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="signin-extras">
+                        <label class="remember-me">
+                            <input type="checkbox" name="remember" [(ngModel)]="signinData.remember" />
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Sign In
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="7" y1="17" x2="17" y2="7" />
+                            <polyline points="7 7 17 7 17 17" />
+                        </svg>
+                    </button>
+
+                    <p class="switch-prompt">
+                        Don't have an account?
+                        <button type="button" class="switch-link" (click)="activeTab = 'signup'">Sign Up</button>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="location-section">
+
+    <div class="location-header">
+        <span class="section-badge">
+            <span class="badge-dot"></span>
+            Our Location
+        </span>
+        <h2 class="section-title">Start Your Fitness Journey</h2>
+        <p class="section-subtitle">
+            Get in touch with GymPro to learn more about our programs, memberships, and training
+            options. Our team is here to answer your questions and help you take first step
+        </p>
+    </div>
+
+    <div class="map-wrapper">
+        <iframe class="map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280949928!2d-74.11976373946234!3d40.69766374859258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="GymPro Location - New York">
+        </iframe>
+    </div>
+
+</section>

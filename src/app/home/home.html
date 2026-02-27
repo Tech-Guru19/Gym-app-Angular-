@@ -1,0 +1,714 @@
+<section class="hero">
+    <video class="hero-video" [autoplay]="true" [muted]="true" [loop]="true" src="gympro-hero-video.mp4">
+        <!-- <source src="gympro-hero-video.mp4" type="video/mp4"> -->
+    </video>
+
+    <div class="hero_overlay"></div>
+    <div class="hero_gradient"></div>
+
+    <div class="hero_content">
+        <div class="hero_pill">
+            <div class="hero_avatars">
+                <img src="author-1.jpg" class="hero_avatar" alt="author 1">
+                <img src="author-2.jpg" class="hero_avatar" alt="author 2">
+                <img src="author-3.jpg" class="hero_avatar" alt="author 3">
+                <img src="author-4.jpg" class="hero_avatar" alt="author 4">
+            </div>
+
+            <span>Smart Training. Real Results</span>
+        </div>
+
+        <h1 class="hero_headline">
+            A Modern Gym Built to Support <br>Your Fitness Journey
+        </h1>
+
+        <p class="hero_sub">
+            GymPro offers structured training programs, expert coaching, and modern equipment to help you stay
+            consistent,
+            train safely, and achieve real fitness progress.
+        </p>
+
+        <button class="hero_cta" [routerLink]="['Register']">Get started Now ↗</button>
+    </div>
+
+    <div class="hero_stats">
+        <div class="hero_stats-number">{{counter()}}%</div>
+        <div class="hero_stats-label">Member Satisfaction Rate</div>
+        <p class="hero_stat-desc">
+            We focus on creating a comfortable space where members feel supported.
+        </p>
+    </div>
+</section>
+
+<section class="about">
+    <div class="about_main">
+        <div class="about_image">
+            <img src="about-us-image-1.jpg" class="about-img-large" alt="Body builder image">
+            <img src="about-us-image-2.jpg" class="about-img-small" alt="a lady working out">
+
+            <div class="review-badge">
+                <svg class="g-logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#EA4335"
+                        d="M24 9.5c3.27 0 6.18 1.12 8.49 2.97l6.31-6.31C34.97 2.63 29.82.5 24 .5 14.82.5 7.01 5.96 3.32 13.73l7.36 5.71C12.46 13.31 17.77 9.5 24 9.5z" />
+                    <path fill="#4285F4"
+                        d="M46.5 24c0-1.64-.15-3.22-.42-4.75H24v9h12.62c-.55 2.97-2.2 5.49-4.67 7.19l7.31 5.68C43.37 37.1 46.5 30.97 46.5 24z" />
+                    <path fill="#FBBC05"
+                        d="M10.68 28.56A14.55 14.55 0 0 1 9.5 24c0-1.58.27-3.1.75-4.53l-7.36-5.71A23.47 23.47 0 0 0 .5 24c0 3.77.88 7.34 2.44 10.5l7.74-5.94z" />
+                    <path fill="#34A853"
+                        d="M24 47.5c6.18 0 11.37-2.05 15.16-5.57l-7.31-5.68c-2.05 1.38-4.67 2.2-7.85 2.2-6.23 0-11.54-3.81-13.32-9.17l-7.74 5.94C7.01 42.04 14.82 47.5 24 47.5z" />
+                </svg>
+
+                <div class="badge-avatars">
+                    <img src="author-1.jpg" alt="">
+                    <img src="author-2.jpg" alt="">
+                    <img src="author-3.jpg" alt="">
+                    <img src="author-4.jpg" alt="">
+                </div>
+
+                <div class="review-info">
+                    <div class="review-score">
+                        4.9/5
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <div class="review-count">Based on 250 reviews</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about_content">
+            <span class="section-pill">About Our Gym</span>
+
+            <h2 class="about_heading">A supportive fitness built<br>for every body</h2>
+
+            <p class="about_sub">
+                GymPro is more than a gym it's a community that supports every fitness journey.
+                From beginners to advanced athletes, we provide structured training.
+            </p>
+
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-card_icon">
+                        <img src="icon-about-us-item-1 (1).svg" alt="">
+                    </div>
+                    <h3>Modern Facilities</h3>
+                    <p>We offer a clean, well equipped training space with modern</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card_icon">
+                        <img src="icon-about-us-item-2 (1).svg" alt="">
+                    </div>
+                    <h3>Supportive Coaches</h3>
+                    <p>Train with experienced who guide, motivate.</p>
+                </div>
+            </div>
+
+            <div class="checklist-row">
+                <ul class="checklist">
+                    <li>Our certified trainers provide support</li>
+                    <li>Clean space. Complete equipment.</li>
+                    <li>Premium equipment in a clean space</li>
+                </ul>
+
+                <div class="contact-badge">
+                    <img src="contact-us-circle.svg" class="contact-badge_ring" alt="">
+                </div>
+            </div>
+
+            <button class="about_cta">More about us ↗</button>
+        </div>
+    </div>
+</section>
+
+<section class="programs">
+    <div class="program_section">
+
+        <div class="text_programs">
+            <span class="program-pill">Our Programs & Training</span>
+            <h2 class="program_text">Training programs built push<br>limits and deliver result</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card_one card-featured">
+                <div class="card_top">
+                    <div class="program_card">
+                        <img src="icon-program-item-1 (1).svg" alt="">
+                    </div>
+                    <span class="card_number">01.</span>
+                </div>
+                <h3>Strength Training</h3>
+                <p>Strength training programs designed for all fitness levels using modern equipment.</p>
+                <div class="card_link">
+                    <span>View Program</span>
+                    <div class="card_link_icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_one card_featured">
+                <div class="card_top">
+                    <div class="program_card">
+                        <img src="icon-program-item-2 (2).svg" alt="">
+
+                    </div>
+                    <span class="card_number">02.</span>
+                </div>
+                <h3>Weight Loss Program</h3>
+                <p>A balanced workout plan combining cardio, strength, fitness and functional training.</p>
+                <div class="card_link">
+                    <span>View Program</span>
+                    <div class="card_link_icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_one card-feature">
+                <div class="card_top">
+                    <div class="program_card">
+                        <img src="icon-program-item-3 (1).svg" alt="">
+                    </div>
+                    <span class="card_number">03.</span>
+                </div>
+                <h3>Cardio & Endurance Training</h3>
+                <p>Boost heart health and stamina with guided cardio sessions that include treadmill.</p>
+                <div class="card_link">
+                    <span>View Program</span>
+                    <div class="card_link_icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_one card-bagImage">
+                <div class="card_top">
+                    <div class="program_card">
+                        <img src="icon-program-item-4 (1).svg" alt="">
+                    </div>
+                    <span class="card_number">04.</span>
+                </div>
+                <h3>Group Fitness Classes</h3>
+                <p>High energy group workouts that keep fun & motivating while improving strength.</p>
+                <div class="card_link">
+                    <span>View Program</span>
+                    <div class="card_link_icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_one card-image">
+                <div class="card_top">
+                    <div class="program_card">
+                        <img src="icon-program-item-5 (1).svg" alt="">
+
+                    </div>
+                    <span class="card_number">05.</span>
+                </div>
+                <h3>Muscle Building Program</h3>
+                <p>Advanced training fitness routines designed to maximize muscle growth through.</p>
+                <div class="card_link">
+                    <span>View Program</span>
+                    <div class="card_link_icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_one card-Image">
+                <div class="card_top">
+                    <div class="program_card">
+                        <img src="icon-program-item-6 (2).svg" alt="">
+
+                    </div>
+                    <span class="card_number">06.</span>
+                </div>
+                <h3>Beginner Fitness Program</h3>
+                <p>A safe and guided program for beginners focusing on foundational movements.</p>
+                <div class="card_link">
+                    <span>View Program</span>
+                    <div class="card_link_icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="whychoose">
+    <div class="whychoose_inner">
+        <div class="whychoose_left">
+            <div class="wc_deco-circle"></div>
+
+            <span class="wc_pill">
+                <span class="wc_pill-dot"></span>
+                Why Choose Us
+            </span>
+
+            <h2 class="wc_heading">More than a gym complete<br>fitness experience</h2>
+
+            <p class="wc_sub">
+                GymPro offers more than just workout space. We provide expert coaching,
+                structured training programs, modern equipment, and a supportive community to
+                help you achieve lasting fitness results at every stage of your journey.
+            </p>
+
+            <div class="wc_features">
+                <div class="wc_feature-card">
+                    <div class="wc_feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="3" />
+                            <path d="M6 20c0-3.31 2.69-6 6-6s6 2.69 6 6" />
+                        </svg>
+                    </div>
+                    <h4>Certified Trainers & Expert Guidance</h4>
+                </div>
+
+                <div class="wc_feature-divider"></div>
+
+                <div class="wc_feature-card">
+                    <div class="wc_feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h4>Supportive & Modern Gym Environment</h4>
+                </div>
+            </div>
+
+            <div class="wc_checklist">
+                <div class="wc_check-item">
+                    <span class="wc_check-icon">✓</span>
+                    <span>Our trainers and staff are always available to guide, motivate members.</span>
+                </div>
+                <div class="wc_check-item">
+                    <span class="wc_check-icon">✓</span>
+                    <span>From gym members to experienced athletes, ensuring comfortable training.</span>
+                </div>
+            </div>
+
+            <button class="wc_cta">Learn More ↗</button>
+        </div>
+
+        <div class="whychoose_right">
+            <img src="why-choose-us-image (1).jpg" alt="Gym training" class="wc_image">
+
+            <div class="wc_badge">
+                <div class="wc_badge-avatars">
+                    <img src="author-1.jpg" alt="">
+                    <img src="author-2.jpg" alt="">
+                    <img src="author-3.jpg" alt="">
+                    <img src="author-4.jpg" alt="">
+                </div>
+                <p class="wc_badge-text">Chosen by 1,200+ Fitness Enthusiasts<br><strong>for Real Results</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wc_footer-bar">
+        <div class="wc_footer-avatars">
+            <img src="author-6.jpg" alt="">
+            <img src="icon-phone-primary (1).svg" class="green" alt="">
+        </div>
+        <p>Let's make something great work together. <a href="#" class="wc_footer-link">Get Free Quote</a></p>
+    </div>
+</section>
+
+<section class="videobanner">
+    <!-- <iframe src="https://youtu.be/Y-x0efG1seA" frameborder="0"></iframe> -->
+    <div class="videobanner_bg"></div>
+    <div class="videobanner_overlay"></div>
+
+    <div class="videobanner_content">
+        <span class="vb_pill">
+            <span class="vb_pill-dot"></span>
+            Watch Our Video
+        </span>
+
+        <h2 class="vb_heading">See how we train, support, &<br>inspire our members</h2>
+    </div>
+
+    <div class="vb_play-btn">
+        <img src="watch-video-circle (1).png" class="vb_circle-ring" alt="" srcset="">
+    </div>
+</section>
+
+<section class="features">
+    <div class="features_header">
+        <div class="features_header-left">
+            <span class="features-pill">
+                <span class="features-pill-dot"></span>
+                Our Features
+            </span>
+            <h2 class="features_heading">Modern gym features built<br>for performance</h2>
+        </div>
+
+        <div class="features_header-right">
+            <p class="features_sub">
+                Modern, performance driven features designed to enhance every workout. From
+                advanced training equipment and dedicated workout zones.
+            </p>
+            <button class="features_cta">Contact Us ↗</button>
+        </div>
+    </div>
+
+    <div class="features_grid">
+
+        <div class="features_card features_card--dark features_card--tall">
+            <div class="features_card-bg"></div>
+            <div class="features_card-overlay"></div>
+
+            <div class="features_card-tags">
+                <span class="feat-tag">• Weight Loss</span>
+                <span class="feat-tag">• Strength Training</span>
+                <span class="feat-tag">• Supportive Environment</span>
+            </div>
+
+            <div class="features_card-avatars">
+                <img src="author-1.jpg" alt="">
+                <img src="author-2.jpg" alt="">
+                <img src="author-3.jpg" alt="">
+                <img src="author-4.jpg" alt="">
+            </div>
+
+            <div class="features_card-body">
+                <h3>Group Training Sessions</h3>
+                <p>Stay motivated with high energy group workouts that build consistency, discipline.</p>
+                <button class="feat-learn-btn">Learn More ↗</button>
+            </div>
+        </div>
+
+        <div class="features_col-mid">
+
+            <div class="features_card features_card--image">
+                <img src="our-features-image.jpg" alt="Gym interior" class="feat-img">
+            </div>
+
+            <div class="features_card features_card--light">
+                <h4 class="feat-card-title">Our Gym Location</h4>
+                <p class="feat-card-sub">GymPro is centrally located for easy access, with ample parking and public
+                    transport
+                </p>
+                <div class="feat-location">
+                    <span class="feat-location-label">Location:-</span>
+                    <span class="feat-location-val">2nd Floor, Wellness Plaza, Main Street, City Center</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="features_col-right">
+
+            <div class="features_card features_card--light">
+                <h4 class="feat-card-title">Structured Workout Programs</h4>
+                <p class="feat-card-sub">Follow goal oriented training plans built for weight loss, muscle gain,
+                    endurance.</p>
+
+                <div class="feat-programs-grid">
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 4v16M18 4v16M6 8h12M6 16h12" />
+                            </svg>
+                        </div>
+                        <span>Loss Program</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 4v16M18 4v16M6 8h12M6 16h12" />
+                            </svg>
+                        </div>
+                        <span>Strength Training</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <span>Cardio & Er</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <span>Training</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="3" />
+                                <path d="M6 20c0-3.31 2.69-6 6-6s6 2.69 6 6" />
+                            </svg>
+                        </div>
+                        <span>Cardio & Endurance</span>
+                    </div>
+                    <div class="feat-program-item">
+                        <div class="feat-program-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="3" />
+                                <path d="M6 20c0-3.31 2.69-6 6-6s6 2.69 6 6" />
+                            </svg>
+                        </div>
+                        <span>Personal Trainner</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features_card features_card--dark features_card--exp">
+                <div class="feat-exp-deco">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2">
+                        <path d="M6 6v36M18 6v36M30 6v36M42 6v36M6 18h36M6 30h36" />
+                    </svg>
+                </div>
+
+                <div class="feat-exp-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" />
+                        <path d="M8 21h8M12 17v4" />
+                    </svg>
+                </div>
+
+                <h3 class="feat-exp-title">Over 15+ Years<br>Of Experience</h3>
+                <p class="feat-exp-sub">Our team ensures every workout is effective, safe, and tailored to your needs.
+                </p>
+
+                <ul class="feat-exp-list">
+                    <li>Season trainers bring deep knowledge</li>
+                    <li>Every program is structure for progress</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="wc_footer-bar">
+        <div class="wc_footer-avatars">
+            <img src="author-6.jpg" alt="">
+            <img src="icon-phone-primary (1).svg" class="green" alt="">
+        </div>
+        <p>Let's make something great work together. <a href="#" class="wc_footer-link">Get Free Quote</a></p>
+    </div>
+</section>
+
+
+<section class="how-it-works">
+    <div class="how-it-works__container">
+
+        <div class="how-it-works__header">
+            <span class="section-pill">
+                <span class="pill-dot"></span> How It Works
+            </span>
+            <h2 class="how-it-works__title">
+                A smart approach to training,<br>progress, and wellness
+            </h2>
+        </div>
+
+        <div class="how-it-works__grid">
+
+            <div class="how-it-works__step">
+                <div class="how-it-works__image-wrapper">
+                    <img src="how.jpg" alt="Join GymPro" class="how-it-works__img">
+                    <span class="how-it-works__number">Step 01</span>
+                </div>
+                <h3 class="how-it-works__step-title">Join GymPro</h3>
+                <p class="how-it-works__step-desc">
+                    GymPro offers advanced training, expert support, and a fitness experience.
+                </p>
+                <ul class="how-it-works__list">
+                    <li>Choose the membership plan that fits</li>
+                </ul>
+            </div>
+
+            <div class="how-it-works__step">
+                <div class="how-it-works__image-wrapper">
+                    <img src="how-it-work-item-image-2.jpg" alt="Assessment" class="how-it-works__img">
+                    <span class="how-it-works__number">Step 02</span>
+                </div>
+                <h3 class="how-it-works__step-title">Assessment & Goal Setting</h3>
+                <p class="how-it-works__step-desc">
+                    Our gym environment is built to help you push limits with confidence.
+                </p>
+                <ul class="how-it-works__list">
+                    <li>Meet with certified trainers evaluate</li>
+                </ul>
+            </div>
+
+            <div class="how-it-works__step">
+                <div class="how-it-works__image-wrapper">
+                    <img src="how-it-work-item-image-3.jpg" alt="Personalized Training" class="how-it-works__img">
+                    <span class="how-it-works__number">Step 03</span>
+                </div>
+                <h3 class="how-it-works__step-title">Personalized Training</h3>
+                <p class="how-it-works__step-desc">
+                    Our personalized training programs are designed around your unique fitness goals.
+                </p>
+                <ul class="how-it-works__list">
+                    <li>Workout plans tailored to your fitness</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="how-it-works__footer">
+            <div class="how-it-works__footer-content">
+                <div class="how-it-works__footer-avatar">
+                    <img src="author-6.jpg" lt="Trainer">
+                    <img src="icon-phone-primary (1).svg" alt="">
+                    <div class="phone-icon-circle">
+                    </div>
+                </div>
+                <p>The simple steps behind our fitness system, built to support every member - <a href="#">See Our All
+                        Programs</a></p>
+            </div>
+            <div class="how-it-works__reviews">
+                <span class="rating-text">4.9/5</span>
+                <span class="stars">★★★★★</span>
+                <span class="review-count">Over 4200 Reviews</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="pricing">
+    <div class="pricing__container">
+
+        <div class="pricing__header">
+            <span class="pricing__badge">
+                <span class="badge-dot"></span> Our Pricing Plans
+            </span>
+            <h2 class="pricing__title">
+                Choose the right plan to unlock<br> your fitness potential
+            </h2>
+        </div>
+
+        <div class="pricing__grid">
+
+            <div class="pricing__card">
+                <div class="pricing__card-top">
+                    <div class="pricing__icon">
+                        <img src="icon-pricing-item-1 (1).svg" alt="Standard" />
+                    </div>
+                    <h3 class="pricing__plan-name">Standard Membership</h3>
+                    <p class="pricing__plan-desc">
+                        With the Standard Membership, get access to our full range of gym facilities.
+                    </p>
+                    <ul class="pricing__features">
+                        <li>
+                            <span class="feature-check">✓</span>
+                            Priority Support & Premium Locker
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            High-energy group fitness classes
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            Motivating & supportive environment
+                        </li>
+                    </ul>
+                </div>
+                <div class="pricing__card-bottom">
+                    <div class="pricing__price-row">
+                        <div class="pricing__price">
+                            <span class="price-amount">$299.00</span>
+                            <span class="price-period">/Monthly</span>
+                        </div>
+                        <button class="pricing__join-btn" [routerLink]="['Register']">Join Now ↗</button>
+                    </div>
+                    <p class="pricing__classes">* Monthly 20 Classes</p>
+                    <p class="pricing__trial">Try Any Membership Free for 1 Week</p>
+                </div>
+            </div>
+
+            <div class="pricing__card">
+                <div class="pricing__card-top">
+                    <div class="pricing__icon">
+                        <img src="icon-pricing-item-1 (1).svg" alt="Standard" />
+                    </div>
+                    <h3 class="pricing__plan-name">Premium Membership</h3>
+                    <p class="pricing__plan-desc">
+                        With the Standard Membership, get access to our full range of gym facilities.
+                    </p>
+                    <ul class="pricing__features">
+                        <li>
+                            <span class="feature-check">✓</span>
+                            Priority Support & Premium Locker
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            High-energy group fitness classes
+                        </li>
+                        <li>
+                            <span class="feature-check">✓</span>
+                            Motivating & supportive environment
+                        </li>
+                    </ul>
+                </div>
+                <div class="pricing__card-bottom">
+                    <div class="pricing__price-row">
+                        <div class="pricing__price">
+                            <span class="price-amount">$499.00</span>
+                            <span class="price-period">/Monthly</span>
+                        </div>
+                        <button class="pricing__join-btn" [routerLink]="['Register']">Join Now ↗</button>
+                    </div>
+                    <p class="pricing__classes">* Monthly 25 Classes</p>
+                    <p class="pricing__trial">Try Any Membership Free for 1 Week</p>
+                </div>
+            </div>
+
+<div class="pricing__card pricing__card--cta">
+    <div class="pricing__cta-content">
+        <h3 class="pricing__cta-title">Get Your Membership</h3>
+        <p class="pricing__cta-desc">
+            Our memberships give you access to all equipment, personalized training.
+        </p>
+        <p class="pricing__cta-phone">Call Us At: +(123) 456-7980</p>
+        <div class="pricing__cta-btn-row">
+            <button class="pricing__cta-btn" [routerLink]="['Register']">Call Us Today! ↗</button>
+        </div>
+    </div>
+    <div class="pricing__cta-image">
+        <img src="our-pricing-cta-image.png" alt="Trainer" />
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
