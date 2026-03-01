@@ -1715,24 +1715,24 @@ body {
 
 
 
-.how-it-works__container {
+.how-it-works_container {
     max-width: 1200px;
     margin: 0 auto;
 
     padding: 0 20px;
 }
 
-.how-it-works__header {
+.how-it-works_header {
     margin-bottom: 60px;
 }
 
-.how-it-works__title {
+.how-it-works_title {
     font-size: 2.5rem;
     margin-top: 20px;
     line-height: 1.2;
 }
 
-.how-it-works__grid {
+.how-it-works_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
@@ -1767,12 +1767,12 @@ body {
     white-space: nowrap;
 }
 
-.how-it-works__step-title {
+.how-it-works_step-title {
     font-size: 1.25rem;
     margin-bottom: 15px;
 }
 
-.how-it-works__step-desc {
+.how-it-works_step-desc {
     color: #aaa;
     font-size: 0.95rem;
     margin-bottom: 15px;
@@ -1959,9 +1959,6 @@ body {
     flex-shrink: 0;
 }
 
-/* =============================
-   CARD BOTTOM (dark footer)
-   ============================= */
 .pricing__card-bottom {
     background: #0d1117;
     padding: 24px 28px;
@@ -2070,7 +2067,6 @@ body {
     letter-spacing: -0.2px;
 }
 
-/* Button row with the lime dot */
 .pricing__cta-btn-row {
     display: flex;
     align-items: center;
@@ -2094,7 +2090,6 @@ body {
     box-shadow: 0 6px 20px rgba(200, 240, 0, 0.4);
 }
 
-/* Image fills remaining space, object-position shows upper body */
 .pricing__cta-image {
     flex: 1;
     width: 100%;
@@ -2280,16 +2275,16 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .how-it-works__title {
+    .how-it-works_title {
         font-size: 2rem;
     }
 
-    .how-it-works__grid {
+    .how-it-works_grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
 
-    .how-it-works__step:last-child {
+    .how-it-works_step:last-child {
         grid-column: 1 / -1;
         max-width: 360px;
         margin: 0 auto;
@@ -2302,25 +2297,25 @@ body {
         border-radius: 18px;
     }
 
-    .how-it-works__header {
+    .how-it-works_header {
         margin-bottom: 40px;
     }
 
-    .how-it-works__title {
+    .how-it-works_title {
         font-size: 1.55rem;
     }
 
-    .how-it-works__title br {
+    .how-it-works_title br {
         display: none;
     }
 
-    .how-it-works__grid {
+    .how-it-works_grid {
         grid-template-columns: 1fr;
         gap: 48px;
         margin-bottom: 40px;
     }
 
-    .how-it-works__step:last-child {
+    .how-it-works_step:last-child {
         grid-column: unset;
         max-width: unset;
         margin: 0;
@@ -2345,7 +2340,7 @@ body {
 }
 
 @media (max-width: 400px) {
-    .how-it-works__title {
+    .how-it-works_title {
         font-size: 1.35rem;
     }
 

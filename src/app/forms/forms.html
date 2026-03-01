@@ -88,7 +88,7 @@
                             [(ngModel)]="signupData.message" rows="5"></textarea>
                     </div>
 
-                    <button type="submit" class="submit-btn">
+                    <button type="submit" class="submit-btn" [routerLink]="['subscription']">
                         Submit Message ↗
                     </button>
                 </form>
@@ -148,7 +148,7 @@
 
                     <p class="switch-prompt">
                         Don't have an account?
-                        <button type="button" class="switch-link" (click)="activeTab = 'signup'">Sign Up</button>
+                        <button type="button" class="switch-link" (click)="activeTab = 'signup'" [routerLink]="['Subscription']">Sign Up</button>
                     </p>
                 </form>
             </div>
