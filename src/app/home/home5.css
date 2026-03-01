@@ -1,0 +1,252 @@
+@media (max-width: 900px) {
+    .about_main {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .about_images {
+        width: 100%;
+        height: 340px;
+    }
+
+    .about_img--large {
+        width: 55%;
+        height: 300px;
+    }
+
+    .about_img--small {
+        width: 45%;
+        height: 220px;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 860px) {
+    .navbar {
+        padding: 16px 24px;
+    }
+
+    .navbar_links {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 0 24px 48px;
+        gap: 32px;
+    }
+
+    .hero_stats {
+        width: 100%;
+    }
+
+    .about {
+        padding: 72px 24px;
+    }
+}
+
+@media (max-width: 960px) {
+    .whychoose_inner {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .whychoose_right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .whychoose {
+        padding: 72px 24px 0;
+    }
+
+    .wc_features {
+        flex-direction: column;
+    }
+
+    .wc_feature-divider {
+        width: 100%;
+        height: 1px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .features_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .features_card--dark.features_card--tall {
+        grid-column: 1 / -1;
+        min-height: 360px;
+    }
+
+    .features_header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 640px) {
+    .features {
+        padding: 72px 24px;
+    }
+
+    .features_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features_card--dark.features_card--tall {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .how-it-works_title {
+        font-size: 2rem;
+    }
+
+    .how-it-works_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .how-it-works_step:last-child {
+        grid-column: 1 / -1;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .how-it-works {
+        padding: 50px 0;
+        border-radius: 18px;
+    }
+
+    .how-it-works_header {
+        margin-bottom: 40px;
+    }
+
+    .how-it-works_title {
+        font-size: 1.55rem;
+    }
+
+    .how-it-works_title br {
+        display: none;
+    }
+
+    .how-it-works_grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        margin-bottom: 40px;
+    }
+
+    .how-it-works_step:last-child {
+        grid-column: unset;
+        max-width: unset;
+        margin: 0;
+    }
+
+    .how-it-works__image-wrapper {
+        width: 160px;
+        height: 160px;
+    }
+
+    .how-it-works__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .how-it-works__reviews {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .how-it-works_title {
+        font-size: 1.35rem;
+    }
+
+    .how-it-works__image-wrapper {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .pricing__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+     .pricing__card--cta {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        align-items: stretch;
+        min-height: 320px;
+    }
+
+    .pricing__cta-content {
+        flex: 1;
+        text-align: left;
+        padding: 36px 36px;
+    }
+
+    .pricing__cta-image {
+        flex: 0 0 300px;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    .pricing {
+        padding: 50px 16px;
+    }
+
+    .pricing__header {
+        margin-bottom: 36px;
+    }
+
+    .pricing__title br {
+        display: none;
+    }
+
+    .pricing__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pricing__card--cta {
+        grid-column: unset;
+        flex-direction: column;
+    }
+
+    .pricing__cta-content {
+        text-align: center;
+        padding: 32px 24px 16px;
+    }
+
+    .pricing__cta-image {
+        flex: unset;
+        max-height: 220px;
+    }
+
+    .pricing__price-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .pricing__join-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

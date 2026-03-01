@@ -339,7 +339,9 @@
 </section>
 
 <section class="videobanner">
-    <iframe src="https://youtu.be/Y-x0efG1seA" frameborder="0"></iframe>
+    <div *ngIf="showVideo">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y-x0efG1seA?si=VyuQbSQBD_UVuC9W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <div class="videobanner_bg"></div>
     <div class="videobanner_overlay"></div>
 
@@ -352,7 +354,7 @@
         <h2 class="vb_heading">See how we train, support, &<br>inspire our members</h2>
     </div>
 
-    <div class="vb_play-btn">
+    <div class="vb_play-btn" (click)="previewVideo()">
         <img src="watch-video-circle (1).png" class="vb_circle-ring" alt="" srcset="">
     </div>
 </section>

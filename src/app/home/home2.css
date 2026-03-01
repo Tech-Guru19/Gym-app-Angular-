@@ -1,0 +1,490 @@
+.card-Image>* {
+    position: relative;
+    z-index: 1;
+}
+
+.card-Image:hover h3,
+.card-Image:hover p,
+.card-Image:hover .card_number,
+.card-Image:hover .card_link span {
+    color: #fff;
+}
+
+.card-Image h3,
+.card-Image p,
+.card-Image .card_number,
+.card-Image .card_link span {
+    transition: color 0.3s ease;
+}
+
+.card_top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.program_card {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #d5eb45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.program_card svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card_number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #bbb;
+    letter-spacing: 0.5px;
+}
+
+.card_one h3 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.3;
+    margin-top: 8px;
+}
+
+.card_one p {
+    font-size: 14px;
+    color: #888;
+    line-height: 1.65;
+    flex: 1;
+}
+
+.card_link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 8px;
+}
+
+.card_link span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.card_link_icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #d5eb45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card_link_icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+
+.whychoose {
+    background: #f7f7f7;
+    padding: 100px 48px 0;
+}
+
+.whychoose_inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 72px;
+}
+
+.whychoose_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+}
+
+
+
+.wc_pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+}
+
+.wc_pill-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #d5eb45;
+    display: inline-block;
+}
+
+.wc_heading {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.1;
+    color: #111;
+    position: relative;
+    z-index: 1;
+}
+
+.wc_sub {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.75;
+    max-width: 480px;
+}
+
+.wc_features {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    background: #f7f7f7;
+    border-radius: 14px;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+}
+
+.wc_feature-card {
+    flex: 1;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.wc_feature-divider {
+    width: 1px;
+    background: #e8e8e8;
+    align-self: stretch;
+}
+
+.wc_feature-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #d5eb45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.wc_feature-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.wc_feature-card h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1.4;
+}
+
+.wc_checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.wc_check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+}
+
+.wc_check-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #d5eb45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: #111;
+    flex-shrink: 0;
+}
+
+
+.wc_cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #d5eb45;
+    color: #111;
+    border: none;
+    border-radius: 50px;
+    padding: 13px 28px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    width: fit-content;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.wc_cta:hover {
+    box-shadow: 0 10px 28px rgba(200, 240, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.whychoose_right {
+    flex: 0 0 auto;
+    width: 460px;
+    position: relative;
+}
+
+.wc_image {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.wc_badge {
+    position: absolute;
+    bottom: 28px;
+    left: 24px;
+    background: rgba(20, 20, 20, 0.82);
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    max-width: 280px;
+}
+
+.wc_badge-avatars {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.wc_badge-avatars img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    margin-left: -8px;
+    object-fit: cover;
+}
+
+.wc_badge-avatars img:first-child {
+    margin-left: 0;
+}
+
+.wc_badge-text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+.wc_badge-text strong {
+    color: #fff;
+}
+
+.wc_footer-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 24px 0;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.wc_footer-avatars {
+    display: flex;
+    align-items: center;
+}
+
+.wc_footer-avatars img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid #f7f7f7;
+    margin-left: -8px;
+    object-fit: cover;
+}
+
+.wc_footer-avatars img:first-child {
+    margin-left: 0;
+}
+
+.wc_footer-avatars .green {
+    background: #d5eb45;
+}
+
+.wc_footer-bar p {
+    font-size: 14px;
+    color: #555;
+}
+
+.wc_footer-link {
+    color: #111;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+
+.videobanner {
+    position: relative;
+    width: 100%;
+    height: 79vh;
+    min-height: 480px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin: 48px 0;
+    border-radius: 20px;
+    max-width: calc(100% - 96px);
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+.videobanner_bg {
+    position: absolute;
+    inset: 0;
+    background: url('https://html.awaikenthemes.com/gympro/images/intro-video-bg-image.jpg') center/cover no-repeat;
+    transform: scale(1.08);
+    transition: transform 0.1s linear;
+    will-change: transform;
+}
+
+.videobanner_overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 8, 15, 0.52);
+}
+
+.videobanner iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 800px;
+    background: black;
+    height: 400px;
+    z-index: 2;
+    z-index: 22;
+}
+
+.videobanner_content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.vb_pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 50px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.vb_pill-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #c8f000;
+    display: inline-block;
+}
+
+.vb_heading {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: clamp(30px, 4.5vw, 58px);
+    color: #fff;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+}
+
+.vb_play-btn {
+    position: relative;
+    z-index: 2;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vb_play-ring {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.vb_circle-ring {
+    width: 150px;
+    height: 150px;
+    animation: spin 10s linear infinite;
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+

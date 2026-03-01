@@ -1,38 +1,31 @@
+import { CommonModule, NgComponentOutlet } from '@angular/common';
 import { Component, NgZone, OnDestroy, OnInit, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { interval, Subscription } from 'rxjs';
 
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink],
+  imports: [RouterLink, CommonModule],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrls:['./home.css', 'home2.css','home3.css','home4.css','home5.css'],
 })
-export class Home implements OnInit, OnDestroy {
+export class Home implements OnInit {
  protected readonly title = signal('Gym-app');
   counter = signal(0);
   counterInterval: any = null;
-  subscription!: Subscription;
+  showVideo = false;
   ngOnInit(): void{
-    // const source = interval(1000);
     this.counterInterval = setInterval(() => {
       this.counter.update(count=> count + 1)
         if (this.counter() > 97) {
           clearInterval(this.counterInterval)
         }
     }, 100);
-    // this.subscription = source.subscribe(() => {
-    //   console.log(this.counter());
-    // });
+  }
+  previewVideo(){
+    this.showVideo = true
   }
 
-  ngOnDestroy(): void {
-    
-  }
-  
-  updateCOunter(){
-  }
 
   openVideo() {
   window.open('https://youtu.be/Y-x0efG1seA', '_blank');

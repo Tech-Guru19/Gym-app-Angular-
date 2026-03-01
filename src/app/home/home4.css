@@ -1,0 +1,547 @@
+.card_featured::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to bottom, rgba(5, 8, 15, 0.45) 0%, rgba(5, 8, 15, 0.72) 100%),
+        url('https://html.awaikenthemes.com/gympro/images/program-image-2.jpg') center/cover no-repeat;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+.card_featured:hover::before {
+    opacity: 1;
+}
+
+.card_featured>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+.card_featured:hover h3,
+.card_featured:hover p,
+.card_featured:hover .card_number,
+.card_featured:hover .card_link span {
+    color: #fff;
+}
+
+.card_featured h3,
+.card_featured p,
+.card_featured .card_number,
+.card_featured .card_link span {
+    transition: color 0.3s ease;
+}
+
+.card-feature {
+    background: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-feature::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to bottom, rgba(5, 8, 15, 0.45) 0%, rgba(5, 8, 15, 0.72) 100%),
+        url('https://html.awaikenthemes.com/gympro/images/program-image-3.jpg') center/cover no-repeat;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+.card-feature:hover::before {
+    opacity: 1;
+}
+
+.card-feature>* {
+    position: relative;
+    z-index: 1;
+}
+
+.card-feature:hover h3,
+.card-feature:hover p,
+.card-feature:hover .card_number,
+.card-featured:hover .card_link span {
+    color: #fff;
+}
+
+.card-feature h3,
+.card-feature p,
+.card-feature .card_number,
+.card-feature .card_link span {
+    transition: color 0.3s ease;
+}
+
+.card-bagImage {
+    background: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-bagImage::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to bottom, rgba(5, 8, 15, 0.45) 0%, rgba(5, 8, 15, 0.72) 100%),
+        url('https://html.awaikenthemes.com/gympro/images/program-image-4.jpg'
+        ) center/cover no-repeat;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+.card-bagImage:hover::before {
+    opacity: 1;
+}
+
+.card-bagImage>* {
+    position: relative;
+    z-index: 1;
+}
+
+.card-bagImage:hover h3,
+.card-bagImage:hover p,
+.card-bagImage:hover .card_number,
+.card-bagImage:hover .card_link span {
+    color: #fff;
+}
+
+.card-bagImage h3,
+.card-bagImage p,
+.card-bagImage .card_number,
+.card-bagImage .card_link span {
+    transition: color 0.3s ease;
+}
+
+.card-image {
+    background: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to bottom, rgba(5, 8, 15, 0.45) 0%, rgba(5, 8, 15, 0.72) 100%),
+        url('https://html.awaikenthemes.com/gympro/images/program-image-5.jpg'
+        ) center/cover no-repeat;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+.card-image:hover::before {
+    opacity: 1;
+}
+
+.card-image>* {
+    position: relative;
+    z-index: 1;
+}
+
+.card-image:hover h3,
+.card-image:hover p,
+.card-image:hover .card_number,
+.card-image:hover .card_link span {
+    color: #fff;
+}
+
+.card-image h3,
+.card-image p,
+.card-image .card_number,
+.card-image .card_link span {
+    transition: color 0.3s ease;
+}
+
+.card-Image {
+    background: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-Image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to bottom, rgba(5, 8, 15, 0.45) 0%, rgba(5, 8, 15, 0.72) 100%),
+        url('https://html.awaikenthemes.com/gympro/images/program-image-6.jpg'
+        ) center/cover no-repeat;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+.card-Image:hover::before {
+    opacity: 1;
+}
+.vb_play-btn {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.vb_play-btn:hover {
+    transform: scale(1.1);
+}
+
+.vb_play-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.2s;
+    z-index: 1;
+}
+
+.vb_play-icon svg {
+    width: 18px;
+    height: 18px;
+    margin-left: 3px;
+}
+
+.vb_play-btn:hover .vb_play-icon {
+    background: #c8f000;
+    transform: scale(1.08);
+}
+
+.vb_play-btn:hover .vb_play-icon svg polygon {
+    fill: #111;
+}
+.features {
+    background: #f7f7f7;
+    padding: 100px 48px;
+}
+
+.features_header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto 56px;
+}
+
+.features_header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.features-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    width: fit-content;
+}
+
+.features-pill-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #d5eb45;
+    display: inline-block;
+}
+
+.features_heading {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.1;
+    color: #111;
+}
+
+.features_header-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 420px;
+    padding-bottom: 4px;
+}
+
+.features_sub {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.75;
+}
+
+.features_cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #d5eb45;
+    color: #111;
+    border: none;
+    border-radius: 50px;
+    padding: 13px 28px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    width: fit-content;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.features_cta:hover {
+    box-shadow: 0 10px 28px rgba(200, 240, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.features_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.features_col-mid,
+.features_col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.features_card {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.features_card--light {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.features_card--dark.features_card--tall {
+    /* background: #0a0e14; */
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url('https://html.awaikenthemes.com/gympro/images/our-features-cta-image.jpg') center/cover no-repeat;
+    padding: 24px;
+}
+
+.features_card-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.features_card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(5, 8, 15, 0.35) 0%,
+            rgba(5, 8, 15, 0.82) 100%);
+    z-index: 1;
+}
+
+.features_card--tall>* {
+    position: relative;
+    z-index: 2;
+}
+
+.features_card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.feat-tag {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 50px;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.features_card-avatars {
+    display: flex;
+    align-items: center;
+}
+
+.features_card-avatars img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid #0a0e14;
+    margin-left: -10px;
+    object-fit: cover;
+}
+
+.features_card-avatars img:first-child {
+    margin-left: 0;
+}
+
+.features_card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.features_card-body h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.features_card-body p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+}
+
+.feat-learn-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #d5eb45;
+    color: #111;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 22px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 8px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.feat-learn-btn:hover {
+    box-shadow: 0 8px 24px rgba(200, 240, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.features_card--image {
+    height: 280px;
+    background: #111;
+}
+
+.feat-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.feat-card-title {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+}
+
+.feat-card-sub {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.65;
+}
+
+.feat-location {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.feat-location-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #111;
+}
+
+.feat-location-val {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.feat-programs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 16px;
+    margin-top: 8px;
+}
+
+.feat-program-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.feat-program-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.feat-program-icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.features_card--exp {
+    background: #0d1117;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.feat-exp-deco {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    opacity: 0.4;
+}
